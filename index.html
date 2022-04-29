@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="check-event">
+        <div id="lowerCase" class="invalid"><h4>Lower Case</h4></div>
+        <div id="upperCase" class="invalid"><h4>Upper Case</h4></div>
+        <div id="number" class="invalid"><h4>Number Case</h4></div>
+        <div id="spiceal" class="invalid"><h4>spiceal charaters</h4></div>
+        <div id="length" class="invalid"><h4>More Than 8 charaters</h4></div>
+      </div>
+      <div class="password-container">
+        <h4>Password</h4>
+        <div class="password">
+          <div>
+            <input
+              onkeyup="validatePassword()"
+              type="password"
+              id="passInput"
+            />
+          </div>
+          <div>
+            <i class="fas fa-lock my-lock-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
